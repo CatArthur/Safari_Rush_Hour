@@ -6,16 +6,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class Menu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        final LinearLayout ll=(LinearLayout)findViewById(R.id.ll);
+        Intent intent=getIntent();
+        if(intent.getIntExtra("x",1)==1){
+            ll.setVisibility(View.INVISIBLE);
+        }
+        else
+            ll.setVisibility(View.VISIBLE);
         Button level=(Button)findViewById(R.id.buttonlv);
         Button help=(Button)findViewById(R.id.buttonhelp);
         Button exit=(Button)findViewById(R.id.buttonex);
-        final ImageView rule=(ImageView)findViewById(R.id.imagerule);
         final Button play=(Button)findViewById(R.id.buttonpl);
 
         level.setOnClickListener(new View.OnClickListener() {
@@ -28,13 +35,15 @@ public class Menu extends AppCompatActivity {
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rule.setVisibility(View.VISIBLE);
+                Intent i=new Intent(Menu.this,Menu.class);
+                i.putExtra("x",0);
+                startActivity(i);
             }
         });
-        rule.setOnClickListener(new View.OnClickListener() {
+        ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rule.setVisibility(View.INVISIBLE);
+                ll.setVisibility(View.INVISIBLE);
             }
         });
         exit.setOnClickListener(new View.OnClickListener() {
