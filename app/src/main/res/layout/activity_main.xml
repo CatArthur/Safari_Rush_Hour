@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bignerdranch.android.safari.MainActivity"
+    android:background="@android:color/background_light"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="2"
+        android:id="@+id/a"
+        android:background="@android:color/background_light">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_help"
+                android:id="@+id/btAsk"
+                android:layout_weight="2"
+                android:background="@color/yellow"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/safarilog"
+                android:id="@+id/imageView3"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_rotate"
+                android:id="@+id/btRes"
+                android:layout_weight="2"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_previous"
+                android:id="@+id/btPrev"
+                android:layout_weight="2"
+                android:background="@color/Biruse"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#a8ff7e"
+                android:text="1"
+                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_next"
+                android:id="@+id/btNext"
+                android:layout_weight="2"
+                android:background="@color/Biruse"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/safariboard"
+            android:id="@+id/imageView2"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="3"
+            android:background="@android:color/background_light" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/a1"
+            android:id="@+id/imageView4"
+            android:background="@android:color/background_light"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Key: Up Down Right Left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:background="@android:color/background_light"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lll"
+        android:visibility="invisible">
+
+        <TextView
+            android:text="YOU WIN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="75sp"
+            android:background="@color/Biruse"
+            android:textColor="@color/Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

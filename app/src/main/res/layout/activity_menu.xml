@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/safarilogo"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:text="Play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="45sp"
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/buttonpl" />
+
+        <Button
+            android:text="Levels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonlv"
+            android:layout_weight="1"
+            android:textSize="45sp"
+            android:background="@color/yellow"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:text="HELP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonhelp"
+            android:layout_weight="1"
+            android:textSize="45sp"
+            android:background="@color/Green"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:text="EXIT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonex"
+            android:layout_weight="1"
+            android:textSize="45sp"
+            android:background="@color/Biruse"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/safarirules"
+        android:background="@android:color/background_light"
+        android:visibility="invisible"
+        android:id="@+id/imagerule" />
+</RelativeLayout>
